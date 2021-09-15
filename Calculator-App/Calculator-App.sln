@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Frontend", "Frontend\Frontend.csproj", "{719CC086-F4C3-441F-B338-EEFB5290B713}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator-api", "Calculator-api\Calculator-api.csproj", "{B9263589-6607-4ED5-A4C2-2193F4874C64}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{719CC086-F4C3-441F-B338-EEFB5290B713}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{719CC086-F4C3-441F-B338-EEFB5290B713}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{719CC086-F4C3-441F-B338-EEFB5290B713}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{719CC086-F4C3-441F-B338-EEFB5290B713}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9263589-6607-4ED5-A4C2-2193F4874C64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9263589-6607-4ED5-A4C2-2193F4874C64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9263589-6607-4ED5-A4C2-2193F4874C64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9263589-6607-4ED5-A4C2-2193F4874C64}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
