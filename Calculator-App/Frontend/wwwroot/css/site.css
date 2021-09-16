@@ -1,71 +1,109 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
-
-a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+h1{
+    text-align: center;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
 }
-
-/* Provide sufficient contrast against white background */
-a {
-  color: #0366d6;
+*{
+    margin: 0;
+    padding: 0;
 }
-
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+.container{
+    margin: auto;
+    width: 25%;
+    padding: 10px;
+    border: 1px solid #f2f2f2;
+    -webkit-box-shadow: 1px 1px 4px 0px rgba(176,176,176,1);
+    -moz-box-shadow: 1px 1px 4px 0px rgba(176,176,176,1);
+    box-shadow: 1px 1px 4px 0px rgba(176,176,176,1);
+    background-color: #fff;
+    height: 450px;
+    background-color: #F8F8F8;
 }
-
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+.header{
+    background-color: #81C784;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
 }
-
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  font-size: 14px;
+.result{
+    font-size: 24px;
+    padding: 24px 5px;
+    font-weight: 700;
+    text-align: right;
+    width: 96%;
+    border: none;
+    background-color: #F8F8F8;
 }
-@media (min-width: 768px) {
-  html {
+.first-row,
+.second-row,
+.third-row,
+.fourth-row,
+.conflict
+{
+    display: inline-block;
+    width: 100%;
+}
+.global{
+    padding: 15px;
+    font-weight: bold;
     font-size: 16px;
-  }
+    border: none;
+    border-radius: 3px;
+    background-color: #F2F2F2;
+    float: left;
+    width: 23.5%;
+    margin: 0 2px;
+    /*border: 1px solid #000;*/
 }
-
-.border-top {
-  border-top: 1px solid #e5e5e5;
+.conflict .left,
+.conflict .right{
+    float: left;
+    position: relative;
 }
-.border-bottom {
-  border-bottom: 1px solid #e5e5e5;
+.left{
+    width: 74%;
 }
-
-.box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+.right{
+    width: 24%;
 }
-
-button.accept-policy {
-  font-size: 1rem;
-  line-height: inherit;
+.big{
+    padding: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    background-color: #F2F2F2;
+    float: left;
+    width: 64.5%;
+    margin: 0 2px;
 }
-
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
+.small{
+    padding: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    background-color: #F2F2F2;
+    float: left;
+    width: 31.5%;
+    margin: 0 2px;
 }
-
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+.plus{
+    height: 105px;
+    width: 100%;
 }
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px; /* Vertically center the text there */
+.green{
+    background-color: #81C784;
+}
+.red{
+    background-color: #F50258
+}
+.grey{
+    background-color: #F2F2F2;
+}
+.white-text{
+    color: #fff;
+}
+.top-margin{
+    margin-top: 4px;
 }

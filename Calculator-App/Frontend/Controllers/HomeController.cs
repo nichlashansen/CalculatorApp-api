@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Net.Http;
+using System.Net.Mime;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -32,6 +34,31 @@ namespace Frontend.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel {RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier});
+        }
+
+        [HttpPost]
+        public Task<string> GetResult(string input)
+        {
+            var arrayOfText= input.Split(" ");
+            string a, b,option;
+            a = arrayOfText[0];
+            option = arrayOfText[1];
+            b = arrayOfText[2];
+
+            if (option == "+")
+                option = "add";
+            else if (option == "-")
+                option = "minus";
+            else if (option == "*")
+                option = "multiply";
+            else option = "divide";
+
+            string result = $"/?a={a}&b={b}&option={option}";
+            var client = new HttpClient();
+            var httpResult =client.GetStringAsync("https://localhost:5001/api/Calculate" +result);
+            return httpResult;
+
+
         }
     }
 }
